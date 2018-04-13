@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="245.0" layoutY="47.0" mnemonicParsing="false" text="Skrape" fx:id="singleSkrapeButton"/>
+      <TextField layoutX="34.0" layoutY="47.0" fx:id="singleUrlField">
+         <tooltip>
+            <Tooltip text="Enter Url" />
+         </tooltip></TextField>
+      <Label layoutX="34.0" layoutY="21.0" prefHeight="26.0" prefWidth="116.0" text="Start Address" />
+      <Button layoutX="459.0" layoutY="47.0" mnemonicParsing="false" text="Choose File" fx:id="uploadListButton"/>
+      <Label layoutX="579.0" layoutY="53.0" text="Address list..." fx:id="listLabel"/>
+      <Button layoutX="570.0" layoutY="424.0" mnemonicParsing="false" text="Skrape from list" fx:id="listSkrapeButton"/>
+      <ListView layoutX="34.0" layoutY="128.0" prefHeight="273.0" prefWidth="322.0" fx:id="emailListView"/>
+      <ListView layoutX="393.0" layoutY="128.0" prefHeight="273.0" prefWidth="322.0" fx:id="phoneNumberListView"/>
+      <Label layoutX="34.0" layoutY="102.0" prefHeight="26.0" prefWidth="56.0" text="Emails" />
+      <Label layoutX="393.0" layoutY="102.0" text="Phone Numbers" />
+   </children>
+</Pane>
