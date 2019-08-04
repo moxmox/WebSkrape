@@ -46,14 +46,7 @@ class MainWindow : View(){
         }
 
         listSkrapeButton.onAction = EventHandler {
-            /*controller.crawl{ emails, numbers ->
-                println("crawl started...")
-                emailListView.items.addAll(emails)
-                phoneNumberListView.items.addAll(numbers)
-            }*/
-
-            //rxCrawl call will go here
-
+       
             runAsync { File(listPath).readLines() }
                     .get().let {
                 controller.rxCrawl(it){emails, numbers ->
