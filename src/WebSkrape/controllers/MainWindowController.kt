@@ -27,11 +27,6 @@ class MainWindowController : Controller(){
     val urlListPath = "${System.getenv("USERPROFILE")}\\url_list.txt"
     val urlTempPath = "${System.getenv("USERPROFILE")}\\temp.txt"
 
-    /*companion object {
-        lateinit var mailList: ListView<String>
-        lateinit var phoneListView: ListView<String>
-    }*/
-
     val numberList = ConcurrentSkipListSet<String>()
     val emailList = ConcurrentSkipListSet<String>()
     val urlList = ConcurrentSkipListSet<String>()
