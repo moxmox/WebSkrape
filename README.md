@@ -1,4 +1,7 @@
 # WebSkrape
+
+> This project has been killed.
+
 kotlin application using for extracting phone numbers and email addresses from web sites
 
 -To scan a single site enter the site's URL (including http:// or https://) in 
